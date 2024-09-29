@@ -1,0 +1,278 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.ellipse {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -200px;
+    z-index: -1;
+
+    img {
+        position: absolute;
+
+        &:nth-child(1) {
+            justify-self: center;
+            bottom: 100px;
+        }
+        &:nth-child(2) {
+            justify-self: center;
+            width: 350px;
+            bottom: 90px;
+        }
+        &:nth-child(3) {
+            justify-self: center;
+            width: 400px;
+            bottom: 80px;
+        }
+        &:nth-child(4) {
+            justify-self: center;
+            width: 450px;
+            bottom: 70px;
+        }
+        &:nth-child(5) {
+            justify-self: center;
+            width: 500px;
+            bottom: 60px;
+        }
+        &:nth-child(6) {
+            justify-self: center;
+            width: 550px;
+            bottom: 50px;
+        }
+        &:nth-child(7) {
+            justify-self: center;
+            width: 600px;
+            bottom: 40px;
+        }
+        &:nth-child(8) {
+            justify-self: center;
+            width: 650px;
+            bottom: 30px;
+        }
+        &:nth-child(9) {
+            justify-self: center;
+            width: 700px;
+            bottom: 20px;
+        }
+        &:nth-child(10) {
+            justify-self: center;
+            width: 750px;
+            bottom: 10px;
+        }
+        &:nth-child(11) {
+            justify-self: center;
+            width: 800px;
+            bottom: 0px;
+        }
+        &:nth-child(12) {
+            justify-self: center;
+            width: 850px;
+            bottom: -10px;
+        }
+        &:nth-child(13) {
+            justify-self: center;
+            width: 900px;
+            bottom: -20px;
+        }
+        &:nth-child(14) {
+            justify-self: center;
+            width: 950px;
+            bottom: -30px;
+        }
+        &:nth-child(15) {
+            justify-self: center;
+            width: 1000px;
+            bottom: -40px;
+        }
+        &:nth-child(16) {
+            justify-self: center;
+            width: 1050px;
+            bottom: -50px;
+        }
+        &:nth-child(17) {
+            justify-self: center;
+            width: 1100px;
+            bottom: -60px;
+        }
+        &:nth-child(18) {
+            justify-self: center;
+            width: 1150px;
+            bottom: -70px;
+        }
+        &:nth-child(19) {
+            justify-self: center;
+            width: 1200px;
+            bottom: -80px;
+        }
+        &:nth-child(20) {
+            justify-self: center;
+            width: 1250px;
+            bottom: -90px;
+        }
+    }
+}
+
+.LeftSide {
+    display: flex;
+    flex-direction: column;
+
+    img:nth-child(1) {
+        position: absolute;
+        top: -190px;
+        left: 80px;
+        width: 110px;
+        height: auto;
+        transform: rotate(-10deg);
+        border-radius: 100%;
+        border: 4px solid #05b471;
+    }
+
+    img:nth-child(2) {
+        position: absolute;
+        left: -60px;
+        transform: rotate(20deg);
+        border-radius: 100%;
+        border: 4px solid #79066c;
+        width: 80px;
+    }
+
+    img:nth-child(3) {
+        transform: rotate(-30deg);
+        border-radius: 100%;
+        border: 4px solid #ce2314;
+        width: 50px;
+    }
+}
+.RightSide {
+    display: flex;
+    flex-direction: column;
+
+    img:nth-child(1) {
+        position: absolute;
+        top: -150px;
+        right: -70px;
+        transform: rotate(-15deg);
+        width: 140px;
+        height: auto;
+        border-radius: 100%;
+        border: 4px solid #07f0d9;
+    }
+
+    img:nth-child(2) {
+        position: absolute;
+        right: 70px;
+        width: 80px;
+        transform: rotate(40deg);
+        border-radius: 100%;
+        border: 4px solid #57b21f;
+    }
+
+    img:nth-child(3) {
+        position: absolute;
+        bottom: -150px;
+        right: 600px;
+        border-radius: 100%;
+        border: 4px solid #7d0334;
+    }
+}
+
+.Center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+        font-family: Inter;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        width: 442px;
+        padding-bottom: 20px;
+    }
+
+    h5 {
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: 480px;
+        padding-bottom: 20px;
+    }
+
+    .subscribeContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .subscribeForm {
+            display: flex;
+            align-items: center;
+            border: 1px solid #282828;
+            border-radius: 50px;
+            padding: 5px;
+            background-color: #1b1b1b;
+
+            .emailInput {
+                background-color: transparent;
+                border: none;
+                padding: 15px 20px;
+                border-radius: 50px;
+                color: #aaaaaa;
+                font-size: 16px;
+                outline: none;
+                flex-grow: 1;
+
+                &::placeholder {
+                    color: #aaaaaa;
+                }
+            }
+
+            .subscribeButton {
+                background-color: #3a3a3a;
+                color: #ffffff;
+                border: none;
+                padding: 15px 30px;
+                border-radius: 50px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-left: -10px;
+
+                &:hover {
+                    background-color: #4e4e4e;
+                }
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+        bottom: 450px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #408f03;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,138 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    z-index: 2;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: 1440px;
+    padding-inline: 150px;
+    padding-block: 80px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 0;
+}
+
+.LeftSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        position: relative;
+        width: 515px;
+        color: #fff;
+        font-family: Inter;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+        top: -180px;
+    }
+
+    img:nth-child(1) {
+        position: relative;
+        top: -148px;
+        right: 52px;
+        cursor: pointer;
+    }
+
+    img:nth-child(2) {
+        position: relative;
+        top: -148px;
+        right: 28px;
+        cursor: pointer;
+    }
+}
+
+.Moeda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: -230px;
+
+    filter: invert(36%) sepia(58%) saturate(4787%) hue-rotate(253deg)
+        brightness(96%) contrast(103%);
+
+    img:nth-child(1) {
+        width: 500px;
+        height: auto;
+        transform: rotate(-15.416deg);
+        flex-shrink: 0;
+        z-index: -1;
+        transform: scaleX(-1);
+    }
+}
+
+.Moeda2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 590px;
+    top: -40px;
+    z-index: -1;
+
+    img:nth-child(1) {
+        width: 226.879px;
+        height: 226.879px;
+        flex-shrink: 0;
+    }
+}
+
+.RightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .Moeda2 {
+        position: absolute;
+        left: 560px;
+        top: -40px;
+        z-index: -2;
+
+        filter: invert(36%) sepia(58%) saturate(4787%) hue-rotate(253deg)
+            brightness(96%) contrast(103%);
+
+        img:nth-child(1) {
+            width: 226.879px;
+            height: 226.879px;
+            flex-shrink: 0;
+        }
+    }
+
+    img:nth-child(1) {
+        display: flex;
+        width: 400px;
+        transform: rotate(-5.217deg);
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        flex-shrink: 0;
+        z-index: -1;
+    }
+
+    img:nth-child(2) {
+        position: absolute;
+        width: 350px;
+        height: auto;
+        flex-shrink: 0;
+        z-index: -2;
+        top: 450px;
+        right: -160px;
+
+        filter: invert(36%) sepia(58%) saturate(4787%) hue-rotate(253deg)
+            brightness(96%) contrast(103%);
+    }
+}
